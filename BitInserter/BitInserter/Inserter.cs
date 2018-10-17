@@ -15,6 +15,7 @@ namespace BitInserter
         /// <param name="firstInd">Index from which bits will be taken.</param>
         /// <param name="secondInd">End index of taking bits.</param>
         /// <returns>New integer after inserting bits.</returns>
+        /// <exception cref="ArgumentOutOfRangeException">Thtows when one of te parameters is out of range.</exception>
         public static int InsertNumber(int firstNum, int secondNum, int firstInd, int secondInd)
         {
             const int IntLength = 31;
